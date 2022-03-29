@@ -119,7 +119,7 @@ private:
 
 inline void __attribute__((noinline)) dispose_io_fragment(io_fragment* f) {
 #pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Wfree-nonheap-object"
+//#pragma GCC diagnostic ignored "-Wfree-nonheap-object"
     delete f; // NOLINT
 #pragma GCC diagnostic pop
 }
